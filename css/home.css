@@ -43,6 +43,79 @@ main{
 	font-weight: normal;
 }
 
+
+/* main-css */
+main{
+	margin-bottom: 60px;
+}
+.sell{
+	display: flex;
+	justify-content: space-around;
+}
+.sale-bt{
+	display: flex;
+	justify-content: center;
+	margin: 5% 0 5%;
+}
+.sale-bt button{
+	height: 40px;
+	width: 120px;
+	color: white;
+	background-color:rgba(0, 128, 0, 0.671);
+	border-radius: 5px;
+	border-color: rgba(0, 128, 0, 0.384);
+}
+
+.margin-right{
+	margin-right: 5%;
+}
+
+.my-balance{
+	display: flex;
+	justify-content: center;
+}
+.pare-balance{
+	display: flex;
+	justify-content: center;
+}
+.pare-balance p{
+	margin-top: 0;
+}
+
+.charge{
+	font-size: 8px;
+	margin-left: 5%;
+	padding-top: 1.5%;
+}
+
+/* グラフのまとまり */
+.detail h1{
+	font-size: 20px;
+	margin-left: 8%;
+}
+.detail a{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 8%;
+	font-size: 14px;
+}
+
+.graph{
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+.graph img{
+	height: 100%;
+	width: 90%;
+	
+}
+
+
+
+
+
+
 /* footer */
 footer{
 	margin-top: 60px;
