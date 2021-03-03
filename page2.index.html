@@ -23,7 +23,7 @@
 		<label>
 			お子さまの名前
 			<br>
-			<input type="text" name="childname">
+			<input type="text" name="childname" required>
 		</label>
 	</div>
 	<br>
@@ -31,7 +31,7 @@
 		<label>
 			メールアドレス
 			<br>
-			<input type="email" name="email"　autocomplete="email">
+			<input type="email" name="email"　autocomplete="email" required>
 		</label>
 	</div>
 <br>
@@ -39,7 +39,7 @@
 		<label>
 			メールアドレス(確認　未設定)
 			<br>
-			<input type="email" name="emailcheck" autocomplete="email">
+			<input type="email" name="emailcheck" autocomplete="email" required>
 		</label>
 	</div>
 <br>
@@ -47,7 +47,7 @@
 		<label>
 			親子共通パスワード
 			<br>
-			<input type="password" name="oyakopass" autocomplete="password">
+			<input type="password" name="oyakopass" autocomplete="password" required>
 		</label>
 	</div>
 <br>
@@ -55,7 +55,7 @@
 		<label>
 			親子共通パスワード(確認　未設定)
 			<br>
-			<input type="password" name="oyakopasscheck" autocomplete="password">
+			<input type="password" name="oyakopasscheck" autocomplete="password" required>
 		</label>
 	</div>
 		<br>
@@ -63,7 +63,7 @@
 		<label>
 			電話番号
 			<br>
-			<input type="tel" name="tel" autocomplete="tel">
+			<input type="tel" name="tel" autocomplete="tel" required>
 		</label>
 	</div>
 <br>
@@ -71,18 +71,57 @@
 		<!-- ▼郵便番号入力フィールド(7桁) -->
 		<label>郵便番号（ハイフンなし）
 			<br>
-		<input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+		<input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" required>
 </label>
 </div>
 <br>
 <div>
 		<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
-		<label>住所
+		<label>住所(タネの発送などで使用します)
 			<br>
-		<input type="text" name="addr11" size="30">
+		<input type="text" name="addr11" size="30" required>
 	</label>
-	</form>
 </div>
+<br>
+<div>
+	<label>野菜を買う可能性がある人を選択してください。
+		<br>
+	<input type="checkbox" name="buyer" value="母" checked>母
+	<input type="checkbox" name="buyer" value="父" checked>父
+	<input type="checkbox" name="buyer" value="祖母" checked>祖母
+	<input type="checkbox" name="buyer" value="祖父" checked>祖父
+	<input type="checkbox" name="buyer" value="その他" checked>その他
+</label>
+</div>
+<div class="riyoukiyaku">
+	<p>
+		利用規約
+	</p>
+	<div id="kiyaku">
+		<p>
+			あああああああああ
+			<br>あああああああああああああ
+			<br>あああああああああああ
+			<br>あああああああああああ
+			<br>ああああああああああああ
+			<br>あああああああああああああ
+			<br>ああああああああああああああ
+			<br>あああああああああ
+			<br>ああああああああ
+		</p>
+	</div>
+	<input type="checkbox" name="doui" value="同意する" required>同意する
+</div>
+
+
+
+<div class="btndiv">
+	<button type="submit" class="btn">つぎへすすむ
+</div>
+
+</form>
+
+
 
 
 </body>
