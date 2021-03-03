@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kodomin layout</title>
+	<link rel="stylesheet" href="css/page2.css">
+
+	<!-- font awsome -->
+	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
+	<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</head>
+
+<body>
+	<h2>
+		新規登録
+	</h2>
+	<p>
+		この設定は、保護者の方と一緒に行ってください。
+	</p>
+	<form>
+		<div>
+		<label>
+			お子さまの名前
+			<br>
+			<input type="text" name="childname">
+		</label>
+	</div>
+	<br>
+	<div>
+		<label>
+			メールアドレス
+			<br>
+			<input type="email" name="email"　autocomplete="email">
+		</label>
+	</div>
+<br>
+<div>
+		<label>
+			メールアドレス(確認　未設定)
+			<br>
+			<input type="email" name="emailcheck" autocomplete="email">
+		</label>
+	</div>
+<br>
+<div>
+		<label>
+			親子共通パスワード
+			<br>
+			<input type="password" name="oyakopass" autocomplete="password">
+		</label>
+	</div>
+<br>
+<div>
+		<label>
+			親子共通パスワード(確認　未設定)
+			<br>
+			<input type="password" name="oyakopasscheck" autocomplete="password">
+		</label>
+	</div>
+		<br>
+		<div>
+		<label>
+			電話番号
+			<br>
+			<input type="tel" name="tel" autocomplete="tel">
+		</label>
+	</div>
+<br>
+<div>
+		<!-- ▼郵便番号入力フィールド(7桁) -->
+		<label>郵便番号（ハイフンなし）
+			<br>
+		<input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+</label>
+</div>
+<br>
+<div>
+		<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+		<label>住所
+			<br>
+		<input type="text" name="addr11" size="30">
+	</label>
+	</form>
+</div>
+
+
+</body>
