@@ -28,8 +28,10 @@
 	padding: 5px;
 	font-size: 16px;
 	font-weight: bold;
-	background-color: #fd9535; 
-	border-color: #fd9535;
-	color: white;
-	border-radius: 5px;
+	background: #fd9535;
+    border: solid 2px #d27d00;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgb(255 255 255 / 20%), 0 2px 2px rgb(0 0 0 / 19%);
+    color: #fff;
+	padding: 5px 10px;
 }
