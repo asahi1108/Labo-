@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>kodomin layout</title>
 	<link rel="stylesheet" href="css/kodomin.css">
-	<link rel="stylesheet" href="css/shop2.css">
+	<link rel="stylesheet" href="css/shop2.5.css">
 
 	<!-- font awsome -->
 	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
+	<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 </head>
 
 <body>
@@ -18,27 +19,52 @@
 		</h1>
 		<img src="img/logo.jpg" alt="ロゴ">
 	</header>
-	<main class="product">
-		<div class="product-img">
-			<img src="img/kaiwaredainkonn.jpg" alt="カイワレ大根の種の商品画像">
-		</div>
-		<div class="product-sentence">
-			<p class="product-name" href="">かいわれ大根の種</p>
-			<p class="bold">500<span class="font-small">円　＋送料200円</span></p>
-			<p class="font-small">育てやすさ <span class="font-small">★★★★☆ 4.6</span></p>
-		</div>
-	</main>
-	<p class="line">
-	</p>
+	<div class="center">
+	<h2>購入手続き</h2>
 	<div>
-	<p class="center">
+		<p class="setsumei">
 		商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明
 		商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明
 		商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説
-	</p>
+	  </p>
+  </div>
+	<div>
+		<p class="tane">
+			ほうれん草のたね（6月中旬発送予定）　　
+		</p>
+	</div>
+		<form>
+			<div class="kosuu">
+		<label>個数
+		<input type="number"　required>
+	</label>
+</div>
+<div>
+		<!-- ▼郵便番号入力フィールド(7桁) -->
+		<label>郵便番号（ハイフンなし）
+		<input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" required>
+</label>
+</div>
+<br>
+<div>
+		<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+		<label>住所
+		<input type="text" name="addr11" size="30" required>
+	</label>
+</div>
+</form>
 
-	<div class="btndiv">
-		<button onclick="location.href='shop2.5.html'" class="btn">
+	<div>
+		<p>
+			現在の会社残高　<span class="large">1800円</span>
+		</p>
+			<p>
+			購入後の会社残高　<span class="large">1300円</span>
+			</p>
+		</div>
+	</div>
+			<div class="btndiv">
+		<button onclick="location.href='shop3.html'" class="btn">
 			購入する
 		</button>
 </div>
