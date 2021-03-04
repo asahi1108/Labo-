@@ -5,11 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>kodomin layout</title>
 	<link rel="stylesheet" href="css/kodomin.css">
-	<link rel="stylesheet" href="css/page10.css">
+	<link rel="stylesheet" href="css/thankyou.css">
 
 	<!-- font awsome -->
 	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
 </head>
+
+
+
+<!-- 子供が実際にこれを見て買うのが大半、よって子供でもわかりやすいようなUIを -->
+<!-- 漢字にフリガナを振ってもいいかも -->
+
 <body>
 	<header>
 		<h1>
@@ -17,50 +23,27 @@
 		</h1>
 		<img src="img/logo.jpg" alt="ロゴ">
 	</header>
-	<div>
-		<h2>
-			保護者の承認
-		</h2>
-		<p>
-			売買契約が成立の場合、保護者の方が保護者専用パスワードを入力してください。
-		</p>
-	</div>
-	<form>
-		<div>
-			<label>
-				取引先
-			<select name="torihikisaki">
-				<option value="mama">
-					母
-				</option>
-				<option value="papa">
-					父
-				</option>
-				<option value="grandma">
-					祖母
-				</option>
-				<option value="grandpa">
-					祖父
-				</option>
-				<option value="others">
-					その他
-				</option>
-			</select>
-			</label>
-		</div>
-	<div>
-			<label>
-				保護者専用パスワード
-				<br>
-				<input type="password" name="hogosyapass" autocomplete="password" required type="number">
-			</label>
-		</div>
-	</form>
+<div class="div1">
+	<p class="center">
+		野菜が売れました。
+	</p>
+	<p class="center">
+		販売内容<br>
+		野菜の名前　ほうれん草<br>
+		個数　3個<br>
+		単価　200円<br>
+	</p>
+	<p class="center">
+		合計 600円
+	</p>
+</div>
+
 	<div class="btndiv">
-		<button onclick="location.href='thankyou.index.html'" class="btn">
-			野菜お買い上げ
-		</button>
+	  <button onclick="location.href='home.index.html'" class="btn">
+	    ホームに戻る
+	  </button>
 	</div>
+
 
 	<footer>
 		<ul class="footer-menu">
@@ -82,5 +65,5 @@
 			</li>
 		</ul>
 	</footer>
-	</body>
-	</html>
+</body>
+</html>
