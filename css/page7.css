@@ -1,0 +1,13 @@
+h2{
+text-align: center;
+}
+.bunseki img{
+height: 150px;
+width: 80%;
+margin: 0 auto;
+padding: 30px;
+}
+.bunseki p{
+  text-align: right;
+  padding: 30px;
+}
