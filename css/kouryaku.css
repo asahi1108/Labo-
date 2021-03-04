@@ -16,12 +16,12 @@ main{
 	display: flex;
 	padding-bottom: 3%;
 	border-bottom: 0.75px solid rgb(165, 165, 165);
+	margin-left: 5%;
 }
 
 .product-img{
 	width: 100px;
 	height: 100px;
-	margin-left: 5%;
 }
 .product-img img{
 	width: 100%;
