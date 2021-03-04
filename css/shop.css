@@ -16,8 +16,10 @@ main{
 .product{
 	display: flex;
 	padding-bottom: 3%;
+	margin-left: 5%;
+}
+.line{
 	border-bottom: 0.75px solid rgb(165, 165, 165);
-	margin-left: 5%
 }
 
 .product-img{
@@ -31,9 +33,7 @@ main{
 .product-sentence{
 	margin-left: 5%;
 }
-.product-name{
-	margin: 0 ;
-}
+
 .bold{
 	font-weight: bold;
 	margin: 12px 0 12px;
