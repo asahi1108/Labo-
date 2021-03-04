@@ -15,8 +15,14 @@
 .input{
 	width: 70%;
 	margin-top: 1%;
-	padding:2px
 }
+input{
+	padding:5px;
+}
+select{
+	padding: 5px;
+}
+
 
 .center{
 	display: flex;

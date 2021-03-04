@@ -5,6 +5,10 @@
 	width: 30%;
 }
 
+input{
+	padding: 5px;
+}
+
 .haikei{
 	background-color: rgba(78, 76, 76, 0.089);
 	margin: 10% auto;
