@@ -1,0 +1,35 @@
+.midasi{
+	font-size: 22px;
+	text-align: center;
+	margin-top: 6%;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
+	/* align-items: center; */
+	margin-left: 20%;
+}
+
+.input{
+	width: 70%;
+	margin-top: 1%;
+	padding:2px
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	margin: 7% 0 7%;
+}
+
+.charge-btn{
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #fd9535; 
+	border-color: #fd9535;
+	color: white;
+	border-radius: 5px;
+}

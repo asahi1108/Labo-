@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kodomin layout</title>
+	<link rel="stylesheet" href="css/kodomin.css">
+	<link rel="stylesheet" href="css/page14.css">
+
+	<!-- font awsome -->
+	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<h1>
+			株式会社 ひろき農園
+		</h1>
+		<img src="img/logo.jpg" alt="ロゴ">
+	</header>
+	<main>
+		<h1 class="midasi">チャージする</h1>
+		<form action="">
+			<div class="flex">
+				<label for="pare-balance">現在の保護者残高</label>
+				<input type="text" name="bakance" class="input">
+			</div>
+			<div class="flex">
+				<label for="charge">チャージ金額</label>
+				<select name="chargeMoney" id="chargeMoney" class="input">
+					<option value="0">1000円</option>
+					<option value="1">3000円</option>
+					<option value="2">5000円</option>
+					<option value="3">10000円</option>
+					<!-- 任意指定はまだできていません -->
+				</select>
+			</div>
+			<div class="flex">
+				<label for="pare-balance">カード番号</label>
+				<input type="text" name="cardNum" class="input">
+			</div>
+			<div class="flex">
+				<label for="pare-balance">カード期限</label>
+				<input type="text" name="cardSec" class="input">
+			</div>
+			<div class="flex">
+				<label for="pare-balance">名前</label>
+				<input type="text" name="name" class="input">
+			</div>
+			<div class="flex">
+				<label for="pare-balance">PINコード</label>
+				<input type="password" name="pin" class="input">
+			</div>
+			<div class="center">
+				<input type="checkbox">カード情報を記憶する　
+			</div>
+			<div class="flex">
+				<label for="result">チャージ後の残高</label>
+				<input type="text" name="result" class="input">
+			</div>
+			<!-- ここのシステムはまだ組んでいない -->
+			<div class="center">
+				<input type="submit" value="チャージする" class="charge-btn">
+			</div>
+		</form>
+	</main>
+	<footer>
+		<ul class="footer-menu">
+			<li class="menu-list">
+				<a href="home.index.html"><i class="fas fa-home"></i></a>
+				<span><a href="home.index.html">ホーム</a></span>
+			</li>
+			<li class="menu-list">
+				<a href="kouryaku.index.html"><i class="fas fa-chart-line"></i></a>
+				<span><a href="kouryaku.index.html">攻略</a></span>
+			</li>
+			<li class="menu-list">
+				<a href="shop.index.html"><i class="fas fa-shopping-cart"></i></a>
+				<span><a href="shop.index.html">ショップ</a></span>
+			</li>
+			<li class="menu-list">
+				<a href="others.index.html"><i class="fas fa-user-cog"></i></a>
+				<span><a href="others.index.html">その他</a></span>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
