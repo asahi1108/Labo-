@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kodomin layout</title>
+	<link rel="stylesheet" href="css/kodomin.css">
+	<link rel="stylesheet" href="css/page21.css">
+
+	<!-- font awsome -->
+	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<h1>
+			株式会社 ひろき農園
+		</h1>
+		<img src="img/logo.jpg" alt="ロゴ">
+	</header>
+  <h2>
+    登録情報の変更
+    </h2>
+<form metod="post" name="form1">
+  <div>
+  <label>
+    お子さまの名前
+    <br>
+    <input type="text" name="childname" required>
+  </label>
+</div>
+<div>
+<label>
+  保護者の名前
+  <br>
+  <input type="text" name="mamaname" required>
+</label>
+</div>
+<br>
+<div>
+  <label>
+    メールアドレス
+    <br>
+    <input type="email" name="email"　autocomplete="email" id="email" required value="">
+  </label>
+</div>
+<br>
+<div>
+  <label>
+    メールアドレス(確認　未設定)
+    <br>
+    <input type="email" name="emailcheck" autocomplete="email" id="emailCheck" required>
+  </label>
+</div>
+<br>
+  <div>
+  <label>
+    電話番号
+    <br>
+    <input type="tel" name="tel" autocomplete="tel" required>
+  </label>
+</div>
+<br>
+<div>
+  <!-- ▼郵便番号入力フィールド(7桁) -->
+  <label>郵便番号（ハイフンなし）
+    <br>
+  <input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" required>
+</label>
+</div>
+<br>
+<div>
+  <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+  <label>住所
+    <br>
+  <input type="text" name="addr11" size="30" required>
+</label>
+</div>
+<br>
+<div>
+<label>野菜を買う可能性がある人を選択してください。
+  <br>
+<input type="checkbox" name="buyer" value="母" checked>母
+<input type="checkbox" name="buyer" value="父" checked>父
+<input type="checkbox" name="buyer" value="祖母" checked>祖母
+<input type="checkbox" name="buyer" value="祖父" checked>祖父
+<input type="checkbox" name="buyer" value="その他" checked>その他
+</label>
+</div>
+<br>
+<div>
+  <label>
+    親子共通パスワード
+    <br>
+    <input type="password" name="oyakopass" autocomplete="password" id="password" required>
+  </label>
+</div>
+<br>
+<div>
+  <label>
+    親子共通パスワード(確認　未設定)
+    <br>
+    <input type="password" name="oyakopasscheck" autocomplete="password" id="passwordCheck" required>
+  </label>
+</div>
+  <br>
+  <div>
+			<label>
+				保護者専用パスワード
+				<br>
+				<input type="password" name="hogosyapass" autocomplete="password" required type="number">
+			</label>
+		</div>
+	<br>
+	<div>
+			<label>
+				保護者専用パスワード(確認　未設定)
+				<br>
+				<input type="password" name="hogosyapasscheck" autocomplete="password" required>
+			</label>
+		</div>
+    </form>
+
+
+<div class="buttons">
+<div class="change">
+  <button onclick="location.href='home.index.html'" class="btn" class="btn1">
+    変更
+  </button>
+</div>
+<div class="margin">
+  </div>
+
+<div class="back">
+  <button onclick="location.href='home.index.html'" class="btn" class="btn1">
+    戻る
+  </button>
+</div>
+</div>
+
+
+
+
+  <footer>
+		<ul class="footer-menu">
+			<li class="menu-list">
+				<a href="home.index.html"><i class="fas fa-home"></i></a>
+				<span><a href="home.index.html">ホーム</a></span>
+			</li>
+			<li class="menu-list">
+				<a href="kouryaku.index.html"><i class="fas fa-chart-line"></i></a>
+				<span><a href="kouryaku.index.html">攻略</a></span>
+			</li>
+			<li class="menu-list">
+				<a href="shop.index.html"><i class="fas fa-shopping-cart"></i></a>
+				<span><a href="shop.index.html">ショップ</a></span>
+			</li>
+			<li class="menu-list">
+				<a href="others.index.html"><i class="fas fa-user-cog"></i></a>
+				<span><a href="others.index.html">その他</a></span>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
