@@ -1,0 +1,27 @@
+.midasi{
+	font-size: 22px;
+	text-align: center;
+	margin-top: 6%;
+}
+
+.contents{
+	display: flex;
+	justify-content: center;
+}
+
+.list01,.list02{
+	border: 1px solid;
+	padding-left: 0px;
+	padding: 2%;
+}
+.list-menu{
+	border-bottom: 1px dashed;
+	margin-bottom: 10%;
+}
+p{
+	margin: 0;
+}
+time{
+	font-size: 13px;
+}
+

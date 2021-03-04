@@ -1,0 +1,19 @@
+.money{
+	margin: 1% 0 1% 30%;
+	padding: 2px;
+	border-bottom: 1px solid;
+	width: 30%;
+}
+
+.haikei{
+	background-color: rgba(78, 76, 76, 0.089);
+	margin: 10% auto;
+	width: 80%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sentence{
+	text-align: center;
+}
