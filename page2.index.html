@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,118 +19,89 @@
 	<p>
 		この設定は、保護者の方と一緒に行ってください。
 	</p>
-	<form metod="post" name="form1">
-		<div>
-		<label>
-			お子さまの名前
-			<br>
-			<input type="text" name="childname" required>
-		</label>
-	</div>
-	<div>
-	<label>
-		保護者の名前
-		<br>
-		<input type="text" name="mamaname" required>
-	</label>
-</div>
-	<br>
-	<div>
-		<label>
-			メールアドレス
-			<br>
-			<input type="email" name="email"　autocomplete="email" id="email" required value="">
-		</label>
-	</div>
-<br>
-<div>
-		<label>
-			メールアドレス(確認　未設定)
-			<br>
-			<input type="email" name="emailcheck" autocomplete="email" id="emailCheck" required>
-		</label>
-	</div>
-<br>
-<div>
-		<label>
-			親子共通パスワード
-			<br>
-			<input type="password" name="oyakopass" autocomplete="password" id="password" required>
-		</label>
-	</div>
-<br>
-<div>
-		<label>
-			親子共通パスワード(確認　未設定)
-			<br>
-			<input type="password" name="oyakopasscheck" autocomplete="password" id="passwordCheck" required>
-		</label>
-	</div>
-		<br>
-		<div>
-		<label>
-			電話番号
-			<br>
-			<input type="tel" name="tel" autocomplete="tel" required>
-		</label>
-	</div>
-<br>
-<div>
+	<form metod="post" name="form1" action="page3.index.html">
+		<div class="flex">
+			<label for="name">お名前</label>
+			<input type="text" name="name" id="name" required>
+		</div>
+		<div class="flex">
+			<label for="parent">保護者の名前</label>
+			<input type="text" name="parent" id="parent" required>
+		</div>
+		<div class="flex">
+			<label for="email">メールアドレス</label>
+			<input type="email" name="email" id="email" required>
+		</div>
+		<div class="flex">
+			<label for="emailConfirm">メールアドレス（確認用）</label>
+			<input type="email" name="emailConfirm" id="emailConfirm" required>
+		</div>
+		<div class="flex">
+			<label for="password">親子共通パスワード</label>
+			<input type="password" name="password" id="password" required>
+		</div>
+
+		<div class="flex">
+			<label for="passwordConfirm">親子共通パスワード（確認用）</label>
+			<input type="password" name="passwordConfirm" id="passwordConfirm" required>
+		</div>
+		<div class="flex">
+			<label for="tel">電話番号</label>
+			<input type="tel" name="tel" id="tellnumber" required>
+		</div>
+
 		<!-- ▼郵便番号入力フィールド(7桁) -->
-		<label>郵便番号（ハイフンなし）
-			<br>
-		<input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" required>
-</label>
-</div>
-<br>
-<div>
+		<div class="flex">
+			<label for="num">郵便番号（ハイフンなし）</label>
+			<input type="text" autocomplete="postal-code" name="zip11" size="10" maxlength="8"
+				onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" required>
+		</div>
 		<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
-		<label>住所(タネの発送などで使用します)
+		<div class="flex">
+			<label for="addrss">住所(タネの発送などで使用します)</label>
+			<input type="text" name="addr11" size="30" required>
+		</div>
+
+
+		<label for="buy">野菜を買う可能性がある人を選択してください。
 			<br>
-		<input type="text" name="addr11" size="30" required>
-	</label>
-</div>
-<br>
-<div>
-	<label>野菜を買う可能性がある人を選択してください。
-		<br>
-	<input type="checkbox" name="buyer" value="母" checked>母
-	<input type="checkbox" name="buyer" value="父" checked>父
-	<input type="checkbox" name="buyer" value="祖母" checked>祖母
-	<input type="checkbox" name="buyer" value="祖父" checked>祖父
-	<input type="checkbox" name="buyer" value="その他" checked>その他
-</label>
-</div>
-<div class="riyoukiyaku">
-	<p>
-		利用規約
-	</p>
-	<div id="kiyaku">
-		<p>
-			あああああああああ
-			<br>あああああああああああああ
-			<br>あああああああああああ
-			<br>あああああああああああ
-			<br>ああああああああああああ
-			<br>あああああああああああああ
-			<br>ああああああああああああああ
-			<br>あああああああああ
-			<br>ああああああああ
-		</p>
-	</div>
-	<input type="checkbox" name="doui" value="同意する" required>同意する
-</div>
+			<input type="checkbox" name="buyer" value="母" checked>母
+			<input type="checkbox" name="buyer" value="父" checked>父
+			<input type="checkbox" name="buyer" value="祖母" checked>祖母
+			<input type="checkbox" name="buyer" value="祖父" checked>祖父
+			<input type="checkbox" name="buyer" value="その他" checked>その他
+		</label>
+
+		<div class="riyoukiyaku">
+			<p>
+				利用規約
+			</p>
+			<div id="kiyaku">
+				<p>
+					あああああああああ
+					<br>あああああああああああああ
+					<br>あああああああああああ
+					<br>あああああああああああ
+					<br>ああああああああああああ
+					<br>あああああああああああああ
+					<br>ああああああああああああああ
+					<br>あああああああああ
+					<br>ああああああああ
+				</p>
+			</div>
+			<input type="checkbox" name="doui" value="同意する" required>同意する
+		</div>
 
 
 
-<div class="btndiv">
-	<input type="submit" class="btn" value="つぎへすすむ">
-</div>
+		<div class="btndiv">
+			<input type="submit" class="btn" value="つぎへすすむ">
+		</div>
 
-</form>
+	</form>
 
 
-<!-- js-ファイルの読み込み -->
-<script src='js/page2.js'></script>
+	<!-- js-ファイルの読み込み -->
+	<script src='js/page2.js'></script>
 
 </body>

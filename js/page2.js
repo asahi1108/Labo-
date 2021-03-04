@@ -1,27 +1,26 @@
-// jsではメールアドレスの一致とパスワードの確認の一致
-// あとはページ遷移（clickしたときの）
 
+var form = document.forms[0];
+console.log(form.passwordConfirm);
+console.log(form);
 
-let btn = document.querySelector('.btn');
-btn.addEventListener('ckick',function(){
-	// メールアドレスの取得
-	var email = document.querySelector("#email").value;
-	var emailConf = document.querySelector('#emailCheck').value;
-	// パスワードの取得
-	var password = document.querySelector("#password").value;
-	var passwordConf = document.querySelector('#passwordCheck').value;
-
-	if(email != emailConf){
-		alert('メールアドレスが一致していません');
-	}else if(password != passwordConf){
-		alret("パスワードが一致しません");
-	}else{
-		location.href = "page3.index.html";
+let submit = document.querySelector('.btn');
+submit.addEventListener('click',function(){
+	// パスワードの一致確認
+	form.passwordConfirm.setCustomValidity("");
+	if(form.password.value != form.passwordConfirm.value){
+		form.passwordConfirm.setCustomValidity("パスワードが一致してません");
+	}
+	// メールアドレスの一致確認
+	var email = document.getElementById('email').value;
+	var emailConfirm = document.getElementById('emailConfirm').value;
+	form.emailConfirm.setCustomValidity("");
+	if(email != emailConfirm){
+		form.emailConfirm.setCustomValidity("メールアドレスが違います");
 	}
 
-})
+});
 
-// var email = document.querySelector("#email");
-// console.log(email.value);
+var email = document.getElementById('email').value;
+console.log(email);
 
-// 後でまたやる、機能していないからもう一回確認する
+
