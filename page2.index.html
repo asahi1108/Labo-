@@ -18,7 +18,7 @@
 	<p>
 		この設定は、保護者の方と一緒に行ってください。
 	</p>
-	<form>
+	<form metod="post" name="form1">
 		<div>
 		<label>
 			お子さまの名前
@@ -31,7 +31,7 @@
 		<label>
 			メールアドレス
 			<br>
-			<input type="email" name="email"　autocomplete="email" required>
+			<input type="email" name="email"　autocomplete="email" id="email" required value="">
 		</label>
 	</div>
 <br>
@@ -39,7 +39,7 @@
 		<label>
 			メールアドレス(確認　未設定)
 			<br>
-			<input type="email" name="emailcheck" autocomplete="email" required>
+			<input type="email" name="emailcheck" autocomplete="email" id="emailCheck" required>
 		</label>
 	</div>
 <br>
@@ -47,7 +47,7 @@
 		<label>
 			親子共通パスワード
 			<br>
-			<input type="password" name="oyakopass" autocomplete="password" required>
+			<input type="password" name="oyakopass" autocomplete="password" id="password" required>
 		</label>
 	</div>
 <br>
@@ -55,7 +55,7 @@
 		<label>
 			親子共通パスワード(確認　未設定)
 			<br>
-			<input type="password" name="oyakopasscheck" autocomplete="password" required>
+			<input type="password" name="oyakopasscheck" autocomplete="password" id="passwordCheck" required>
 		</label>
 	</div>
 		<br>
@@ -116,12 +116,13 @@
 
 
 <div class="btndiv">
-	<button type="submit" class="btn">つぎへすすむ
+	<input type="submit" class="btn" value="つぎへすすむ">
 </div>
 
 </form>
 
 
-
+<!-- js-ファイルの読み込み -->
+<script src='js/page2.js'></script>
 
 </body>
