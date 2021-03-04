@@ -1,0 +1,42 @@
+.top{
+text-align:center;
+width: 100%;
+}
+.topdiv1{
+  margin-top: 100px;
+}
+.topdiv2{
+  text-align: center;
+  margin-top: 50px;
+}
+form{
+  padding:20px 10px 5px 5px;
+  text-align: center;
+}
+
+input{
+  padding: 5px;
+  text-align: center;
+  margin: 30px;
+}
+
+.login{
+  margin-bottom: 60px;
+}
+.btn{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.btn:active {
+
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
