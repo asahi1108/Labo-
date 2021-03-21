@@ -46,7 +46,7 @@ main{
 
 /* main-css */
 main{
-	margin-bottom: 60px;
+	margin-bottom: 15%;
 }
 .sell{
 	display: flex;
@@ -109,6 +109,6 @@ main{
 }
 .graph img{
 	height: 100%;
-	width: 90%;
+	width: 70%;
 
 }
